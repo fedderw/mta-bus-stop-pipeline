@@ -6,3 +6,6 @@ fastparquet
 pytest
 geopandas
 pyjanitor
+black
+isort
+pipreqsm
