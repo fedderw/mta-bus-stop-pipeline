@@ -8,4 +8,5 @@ geopandas
 pyjanitor
 black
 isort
-pipreqsm
+awscli
+
