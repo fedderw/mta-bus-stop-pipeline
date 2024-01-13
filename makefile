@@ -6,4 +6,4 @@ format:
 	. venv/bin/activate && black . -l 79 && isort .
 
 run_pipeline:
-	. venv/bin/activate && python pipeline.py --s3-bucket "transitscope-baltimore" --s3-key "mta_bus_stops.parquet"
+	. venv/bin/activate && python main.py --s3-bucket "transitscope-baltimore" --s3-key "mta_bus_stops.parquet"
