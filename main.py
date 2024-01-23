@@ -90,6 +90,10 @@ def transform_mta_bus_stops(gdf):
         .apply(list)
         .reset_index()
     )
+    # Convert the list of routes served by stop into a string
+    route_stop["routes_served"] = route_stop["routes_served"].apply(
+        lambda x: ", ".join(x)
+    )
     # Drop routes_served from the original gdf
     gdf = gdf.drop(columns=["routes_served"])
     # Merge the routes served by stop back into the original gdf
