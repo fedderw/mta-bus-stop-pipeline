@@ -1,5 +1,8 @@
 # mta-bus-stop-pipeline
 
+> [!NOTE] 
+> This will be deprecated, but it will work fine as a standalone CLI tool
+
 ## Overview
 This Python script is designed to automate the process of downloading, transforming, and uploading MTA bus stops data to an AWS S3 bucket. It uses various libraries such as `pandas`, `geopandas`, and `prefect` to handle data operations and flow management.
 
